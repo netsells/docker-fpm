@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install mbstring \
     && docker-php-ext-install mysqli pdo pdo_mysql \
     && docker-php-ext-install pcntl \
-    && docker-php-ext-install soap
+    && docker-php-ext-install soap \ 
+    && docker-php-ext-install zip
 
 COPY config/php.ini /usr/local/etc/php/
     
